@@ -1,0 +1,77 @@
+@use "../styles/variables.scss" as v;
+
+@font-face {
+	font-family: Bahij;
+	src: url("../src/fonts/Bahij_TheSansArabic-Light.ttf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Bahij;
+	src: url("../src/fonts/Bahij_TheSansArabic-SemiLight.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Bahij;
+	src: url("../src/fonts/Bahij_TheSansArabic-Plain.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Bahij;
+	src: url("../src/fonts/Bahij_TheSansArabic-SemiBold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Bahij;
+	src: url("../src/fonts/Bahij_TheSansArabic-Bold.ttf");
+	font-weight: 700;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Raleway;
+	font-weight: 200;
+	// height: 200vh;
+}
+
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+	margin: 0;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+a {
+	color: white !important;
+	text-decoration: none !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+///////////////////////////////////////////////////////;
+// this css
+
+/////////////////////////////////////////////
+body[dir="rtl"] {
+	div,
+	h1,
+	h2,
+	p {
+		text-align: left !important;
+	}
+}
