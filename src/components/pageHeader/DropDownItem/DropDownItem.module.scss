@@ -1,0 +1,18 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.dropdown-item {
+	@include f.flex(row, center, center, 0 5px);
+	padding-bottom: 1px;
+	padding: 20px 40px 20px 20px;
+	transition: v.$transition;
+
+	cursor: pointer;
+	p {
+		@include f.font(500, 18px, 29px);
+	}
+
+	&:hover {
+		background-color: v.$myOverlayColor;
+	}
+}

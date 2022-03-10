@@ -1,0 +1,31 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.navbar {
+	@include f.flex(row, space-around, center);
+	height: 80px;
+	background-color: #fff;
+
+	.nav-items {
+		@include f.flex(row, center, center, 0 32px);
+	}
+	.nav-icons {
+		@include f.flex(row, center, center, 0 22px);
+	}
+}
+
+// @media screen and (max-width: 450px) {
+// 	.button {
+// 		button {
+// 			padding: 10px 15px;
+// 			font-size: 14px;
+// 		}
+// 		// display: none;
+// 	}
+// }
+
+// // @media screen and (max-width: 322px) {
+// //   .button {
+// //     display: none;
+// //   }
+// // }

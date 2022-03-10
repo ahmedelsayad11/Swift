@@ -1,0 +1,36 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.cart-dropdown-item {
+	@include f.flex(row, space-between, unset);
+	margin-bottom: 41px;
+	.information,
+	.quantity,
+	.image {
+		@include f.flex(column, space-between, center, 20px 0);
+	}
+
+	.information {
+		margin-right: 25px;
+		align-items: flex-start;
+
+		.brand {
+			@include f.font(300, 16px, 26px);
+			h5 {
+				margin: 0;
+			}
+		}
+		.name {
+			@include f.font(300, 16px, 26px);
+			h5 {
+				margin: 0;
+			}
+		}
+		.price {
+			@include f.font(500, 16px, 26px);
+		}
+		.sizes {
+			@include f.flex(row, center, center, 0 8px);
+		}
+	}
+}

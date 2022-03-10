@@ -1,0 +1,16 @@
+@use "@/styles/sharedFunction.scss" as f;
+
+.wrapper {
+	@include f.flex(row, center, center, 20px 50px);
+	width: 80%;
+	margin: 72px auto 20px;
+	.gallery-images {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.wrapper {
+		@include f.flex(column, center, center, 20px 100px);
+	}
+}

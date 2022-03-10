@@ -1,0 +1,53 @@
+@use "@/styles/variables.scss" as v;
+@use "@/styles/sharedFunction.scss" as f;
+
+.wrapper {
+	@include f.flex(column, center, inherit);
+	max-width: 292px;
+	.brand {
+		@include f.font(600, 27px, 27px);
+		h3 {
+			margin: 0;
+		}
+	}
+	.name {
+		@include f.font(200, 25px, 27px);
+	}
+	.size {
+		margin-top: 43px;
+		margin-bottom: 40px;
+		.sizes {
+			@include f.flex(row, flex-start, center, 0 12px);
+		}
+	}
+	.price {
+		h4 {
+			@include f.font(700, 18px, 18px);
+			margin-bottom: 10px;
+		}
+		span {
+			@include f.font(700, 24px, 18px);
+		}
+	}
+	.button {
+		margin-top: 20px;
+		margin-bottom: 40px;
+		button {
+			width: 100%;
+			padding: 15px 30px;
+			@include f.font(600, 14px, 17px);
+			font-family: Raleway;
+			outline: none;
+			cursor: pointer;
+			color: #fff;
+			background: v.$myPrimaryColor;
+			border: none;
+			&:hover {
+				filter: brightness(1.1);
+			}
+		}
+	}
+	.description {
+		@include f.font(400, 16px, 26px);
+	}
+}

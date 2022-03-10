@@ -1,0 +1,26 @@
+@use "@/styles/variables.scss" as v;
+@use "@/styles/sharedFunction.scss" as f;
+
+.image-gallery {
+	@include f.flex(row, center, flex-start, 0 5px);
+	.selected-image,
+	.all-images {
+		position: relative;
+	}
+	.selected-image {
+		height: 511px;
+		width: 610px;
+	}
+
+	.all-images {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 10px 0;
+		.gallery-image {
+			position: relative;
+			height: 88px;
+			width: 88px;
+		}
+	}
+}

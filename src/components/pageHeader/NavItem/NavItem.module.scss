@@ -1,0 +1,23 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.link-item {
+	@include f.font(600, 16px, 120%);
+	color: v.$myPrimaryColor !important;
+	position: relative;
+	text-decoration: none;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -50px;
+		opacity: 0;
+		width: 100%;
+		height: 2px;
+		background-color: v.$myPrimaryColor;
+		transition: v.$transition;
+	}
+	&:hover::before {
+		opacity: 1;
+		bottom: -30px;
+	}
+}

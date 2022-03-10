@@ -1,0 +1,43 @@
+@use "@/styles/sharedFunction.scss" as f;
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	.cart-header {
+		// margin: 0 ;
+		margin: 80px auto;
+	}
+
+	.wrapper {
+		@include f.flex(row, space-between, center);
+		.left-cart-side {
+			h2 {
+				@include f.font(600, 30px, 27px);
+				margin-bottom: 16px;
+			}
+			h3 {
+				@include f.font(400, 30px, 27px);
+			}
+			h4 {
+				@include f.font(600, 24px, 18px);
+				margin: 12px 0;
+			}
+			.sizes {
+				@include f.flex(row, unset, flex-start, 0 7px);
+			}
+		}
+
+		.right-cart-side {
+			@include f.flex(row, center, center, 0 15px);
+			height: 185px;
+
+			.cart-counter {
+				@include f.flex(column, space-between, center);
+				height: 100%;
+			}
+			.cart-slider {
+				height: 100%;
+			}
+		}
+	}
+}

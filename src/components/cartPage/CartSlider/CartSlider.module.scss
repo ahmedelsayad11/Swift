@@ -1,0 +1,38 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.wrapper {
+	position: relative;
+	min-width: 141px;
+	height: 100%;
+
+	.cart-slider {
+		position: absolute;
+		transition: v.$transition;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		.image {
+			position: relative;
+			height: 100%;
+		}
+		.arrows {
+			@include f.flex(row, space-between, center);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			span {
+				transform: scale(1.2);
+				font-size: larger;
+				font-weight: 500;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.selected {
+	z-index: 2;
+	opacity: 1 !important;
+}

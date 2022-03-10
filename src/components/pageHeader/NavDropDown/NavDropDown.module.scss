@@ -1,0 +1,29 @@
+@use "../../../../styles/variables.scss" as v;
+@use "../../../../styles/sharedFunction.scss" as f;
+
+.dropdown {
+	position: relative;
+	// overflow: hidden;
+	.dropdown-icons {
+		@include f.flex(row, center, center, 0 10px);
+		cursor: pointer;
+		.dropdown-arrow {
+			@include f.flex(row, center, center);
+			svg {
+				transform: scale(1.5);
+			}
+		}
+	}
+
+	.dropdown-content {
+		background: #fff;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		color: v.$myDarkColor;
+		position: absolute;
+		z-index: 3;
+		left: 0;
+		top: 35px;
+		background-color: #fff;
+		@include f.flex(column, center, center);
+	}
+}
