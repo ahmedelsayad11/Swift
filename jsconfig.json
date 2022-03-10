@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			// "@/styles/*": ["styles/*"],
+			"@/helpers/*": ["src/helpers/*"],
+			"@/store/*": ["src/store/*"],
+			"@/api/*": ["src/api/*"],
+			"@/components/*": ["src/components/*"],
+			"@/svg/*": ["src/svg/*"],
+			"@/shared/*": ["src/components/shared/*"],
+			"@/images/*": ["src/assests/images/*"],
+			"@/styles/*": ["styles/*"]
+		}
+	}
+}
